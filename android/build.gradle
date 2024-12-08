@@ -2,7 +2,7 @@ group 'com.dsi.easy_audience_network'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = "1.8.22"
+    ext.kotlin_version = "1.9.24"
     repositories {
         google()
         mavenCentral()
@@ -71,9 +71,9 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
 
     implementation 'com.facebook.android:audience-network-sdk:6.17.0'
-    implementation 'androidx.annotation:annotation:1.4.0'
+    implementation 'androidx.annotation:annotation:1.9.1'
     compileOnly files('tempLibs/flutter.jar')
 }
